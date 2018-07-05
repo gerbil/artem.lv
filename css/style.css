@@ -2074,3 +2074,15 @@ input[type="text"] {
 .datepicker table tr td.today {
     background: #ff6107 !important;
 }
+
+.lang {
+    margin-top: 25px;
+}
+
+.lang a {
+    color: white !important;
+}
+
+.lang a img {
+    width: 50px;
+}
