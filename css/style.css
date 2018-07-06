@@ -2080,7 +2080,8 @@ input[type="text"] {
 }
 
 .lang a {
-    color: white !important;
+    color: #b3b0b6;
+    text-decoration: none;
 }
 
 .lang a img {
