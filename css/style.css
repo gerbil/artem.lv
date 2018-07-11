@@ -2088,3 +2088,82 @@ input[type="text"] {
 .lang a img {
     width: 50px;
 }
+
+#cd-nav ul {
+    /* mobile first */
+    position: fixed;
+    width: 90%;
+    max-width: 400px;
+    right: 5%;
+    bottom: 20px;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-flex;
+    margin-right: 390px;
+
+    transform: scale(0);
+    transform-origin: 100% 100%;
+    transition: transform 0.3s, visibility 0s 0.3s;
+}
+
+#cd-nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#cd-nav ul.is-visible {
+    visibility: visible;
+    transform: scale(1);
+    transition: transform 0.3s, visibility 0s 0s;
+}
+
+.cd-nav-trigger {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    width: 44px;
+    height: 44px;
+
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 1170px) {
+    #cd-nav ul {
+        /* the navigation moves to the top */
+        position: absolute;
+        width: auto;
+        max-width: none;
+        bottom: auto;
+        top: 45px;
+        visibility: visible;
+        transform: scale(1);
+        transition: all 0s;
+    }
+
+    #cd-nav.is-fixed ul {
+        position: fixed;
+        width: 90%;
+        max-width: 400px;
+        bottom: 20px;
+        top: auto;
+        visibility: hidden;
+        transform: scale(0);
+    }
+}
+
+li.round {
+    background: black;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding-top: 4px;
+    padding-left: 9px;
+    margin-right: 5px !important;
+    margin-top: 5px !important;
+}
