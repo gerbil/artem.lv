@@ -147,7 +147,6 @@
                 horizontalScrolling: false,
                 hideDistantElements: false,
                 responsive: true
-
             });
         }
     };
