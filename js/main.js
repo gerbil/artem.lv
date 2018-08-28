@@ -86,10 +86,10 @@
                             }
 
                             el.removeClass('item-animate');
-                        }, k * 200, 'easeInOutExpo');
+                        }, k * 20, 'easeInOutExpo');
                     });
 
-                }, 100);
+                }, 10);
 
             }
 
@@ -227,24 +227,24 @@
     var navigationContainer = $('#cd-nav'),
         mainNavigation = navigationContainer.find('#cd-main-nav ul');
 
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         checkMenu();
     });
 
     function checkMenu() {
-        if( $(window).scrollTop() > offset && !navigationContainer.hasClass('is-fixed')) {
+        if ($(window).scrollTop() > offset && !navigationContainer.hasClass('is-fixed')) {
             //add .is-fixed class to #cd-nav
             //wait for the animation to end
             //add the .has-transitions class to main navigation (used to bring back transitions)
         } else if ($(window).scrollTop() <= offset) {
             //check if the menu is open when scrolling up - for browser that supports transition
-            if( mainNavigation.hasClass('is-visible')  && !$('html').hasClass('no-csstransitions') ) {
+            if (mainNavigation.hasClass('is-visible') && !$('html').hasClass('no-csstransitions')) {
                 //close the menu
                 //wait for the transition to end
                 //remove the .is-fixed class from the #cd-nav and the .has-transitions class from main navigation
             }
             //check if the menu is open when scrolling up - fallback if transitions are not supported
-            else if( mainNavigation.hasClass('is-visible')  && $('html').hasClass('no-csstransitions') ) {
+            else if (mainNavigation.hasClass('is-visible') && $('html').hasClass('no-csstransitions')) {
                 //no need to wait for the end of transition - close the menu and remove the .is-fixed class from the #cd-nav
             }
             //scrolling up with menu closed
@@ -254,5 +254,24 @@
         }
     }
 
+    $("#contact-form").submit(function (event) {
+
+        $('#contact-form input[type="submit"]')[0].disabled = true;
+        $('.intro-email-success').removeClass('hidden');
+
+        var name = $('#form').find('input[name="name"]').val();
+        var email = $('#form').find('input[name="email"]').val();
+        var tel = $('#form').find('input[name="tel"]').val();
+        var service = $('#form select').val();
+
+        console.log(name, email, tel, service);
+
+        Email.send(email,
+            "jurijs.kobecs@gmail.com",
+            service,
+            'Имя - ' + name + ' | Номер телефона - ' + tel,
+            {token: "cb40484f-2905-412e-933d-e5e564db50dc"});
+        event.preventDefault();
+    });
 
 }());

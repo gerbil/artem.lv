@@ -854,18 +854,22 @@
                         <p>Пожалуйста, заполните эту форму, и наша команда свяжется с вами.<br/>
                             Или звоните <a href="tel:+37129615780">+371 29615780</a></p>
                     </div>
+
+                    <div class="col-md-6 col-md-offset-3 text-center animate-box intro-email-success hidden">
+                        <h3 style="color: #FF6107 !important;">Спасибо! <br/> Мы свяжемся с вами.</h3>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="row">
                             <div class="col-md-12">
-                                <form method="post" class="colorlib-form">
+                                <form method="post" class="colorlib-form" id="form">
                                     <div class="row">
                                         <div class="col-md-6 animate-box">
                                             <div class="form-group">
                                                 <label for="name">Имя</label>
                                                 <div class="form-field">
-                                                    <input type="text" class="form-control" placeholder="Janis">
+                                                    <input type="text" class="form-control" placeholder="Janis" name="name" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -873,8 +877,7 @@
                                             <div class="form-group">
                                                 <label for="email">Email</label>
                                                 <div class="form-field">
-                                                    <input type="text" class="form-control"
-                                                           placeholder="email@test.com">
+                                                    <input type="text" class="form-control" placeholder="email@test.com" name="email" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -882,53 +885,7 @@
                                             <div class="form-group">
                                                 <label for="phone">Телефон</label>
                                                 <div class="form-field">
-                                                    <input type="text" class="form-control" placeholder="+371 20001234">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 animate-box">
-                                            <div class="form-group">
-                                                <label for="date">Дата</label>
-                                                <div class="form-field">
-                                                    <i class="icon icon-calendar2"></i>
-                                                    <input type="text" id="date" class="form-control date"
-                                                           placeholder="Date">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 animate-box">
-                                            <div class="form-group">
-                                                <label for="time">Время</label>
-                                                <div class="form-field">
-                                                    <i class="icon icon-arrow-down3"></i>
-                                                    <select name="time" id="time" class="form-control">
-                                                        <option value="#">9:00</option>
-                                                        <option value="#">9:30</option>
-                                                        <option value="#">10:00</option>
-                                                        <option value="#">10:30</option>
-                                                        <option value="#">11:00</option>
-                                                        <option value="#">11:30</option>
-                                                        <option value="#">12:00</option>
-                                                        <option value="#">12:30</option>
-                                                        <option value="#">13:00</option>
-                                                        <option value="#">13:30</option>
-                                                        <option value="#">14:00</option>
-                                                        <option value="#">14:30</option>
-                                                        <option value="#">15:00</option>
-                                                        <option value="#">15:30</option>
-                                                        <option value="#">16:00</option>
-                                                        <option value="#">16:30</option>
-                                                        <option value="#">17:00</option>
-                                                        <option value="#">17:30</option>
-                                                        <option value="#">18:00</option>
-                                                        <option value="#">18:30</option>
-                                                        <option value="#">19:00</option>
-                                                        <option value="#">19:30</option>
-                                                        <option value="#">20:00</option>
-                                                        <option value="#">20:30</option>
-                                                        <option value="#">21:00</option>
-                                                        <option value="#">21:30</option>
-                                                    </select>
+                                                    <input type="text" class="form-control" placeholder="+371 20001234" name="tel" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -937,10 +894,10 @@
                                                 <label for="person">Услуга</label>
                                                 <div class="form-field">
                                                     <i class="icon icon-arrow-down3"></i>
-                                                    <select name="people" id="people" class="form-control">
-                                                        <option value="#">Дератизация</option>
-                                                        <option value="#">Дезинсекция</option>
-                                                        <option value="#">Дезинфекция</option>
+                                                    <select name="people" id="people" class="form-control" name="service">
+                                                        <option value="Дератизация">Дератизация</option>
+                                                        <option value="Дезинсекция">Дезинсекция</option>
+                                                        <option value="Дезинфекция">Дезинфекция</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -1027,9 +984,10 @@
     <script src="../js/jquery.flexslider-min.js"></script>
     <!-- Date Picker -->
     <script src="../js/bootstrap-datepicker.js"></script>
-
     <!-- Main JS (Do not remove) -->
     <script src="../js/main.js"></script>
+    <!-- Mail -->
+    <script src="../js/smtp.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2188598-8"></script>
