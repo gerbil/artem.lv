@@ -58,6 +58,16 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Ads: 799846183 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-799846183"></script>
+    <script> window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'AW-799846183'); </script>
+
 </head>
 <body>
 
@@ -864,7 +874,8 @@
                 </div>
 
                 <div class="col-md-6 col-md-offset-3 text-center animate-box intro-email-success hidden">
-                    <h3 style="color: #FF6107 !important;">Paldies par Jūsu interesi! <br/> Mēs sazināsimies ar jums.</h3>
+                    <h3 style="color: #FF6107 !important;">Paldies par Jūsu interesi! <br/> Mēs sazināsimies ar jums.
+                    </h3>
                 </div>
             </div>
             <div class="row">
@@ -877,7 +888,8 @@
                                         <div class="form-group">
                                             <label for="name">Vārds</label>
                                             <div class="form-field">
-                                                <input type="text" class="form-control" placeholder="Janis" name="name" required>
+                                                <input type="text" class="form-control" placeholder="Janis" name="name"
+                                                       required>
                                             </div>
                                         </div>
                                     </div>
@@ -885,7 +897,8 @@
                                         <div class="form-group">
                                             <label for="email">Email</label>
                                             <div class="form-field">
-                                                <input type="text" class="form-control" placeholder="email@test.com" name="email" required>
+                                                <input type="text" class="form-control" placeholder="email@test.com"
+                                                       name="email" required>
                                             </div>
                                         </div>
                                     </div>
@@ -893,7 +906,8 @@
                                         <div class="form-group">
                                             <label for="phone">Telefons</label>
                                             <div class="form-field">
-                                                <input type="text" class="form-control" placeholder="+371 20001234" name="tel" required>
+                                                <input type="text" class="form-control" placeholder="+371 20001234"
+                                                       name="tel" required>
                                             </div>
                                         </div>
                                     </div>
@@ -992,21 +1006,15 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <!-- Date Picker -->
 <script src="js/bootstrap-datepicker.js"></script>
-<!-- Mail -->
-<script src="js/smtp.js"></script>
 <!-- Main JS (Do not remove) -->
 <script src="js/main.js"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2188598-8"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-2188598-8');
+<!-- JS Mail -->
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_1O13tAP3PyvU1X6tPuVG6");
+    })();
 </script>
 
 </body>

@@ -266,11 +266,20 @@
 
         console.log(name, email, tel, service);
 
-        Email.send(email,
-            "jurijs.kobecs@gmail.com",
-            service,
-            'Имя - ' + name + ' | Номер телефона - ' + tel,
-            {token: "cb40484f-2905-412e-933d-e5e564db50dc"});
+        var templateParams = {
+            from_name: name,
+            reply_to: email,
+            service_text: service,
+            telephone: tel
+        };
+
+        emailjs.send('default_service', 'template_YrhHYqua', templateParams)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+
         event.preventDefault();
     });
 
