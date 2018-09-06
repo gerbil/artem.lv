@@ -872,7 +872,6 @@ header .colorlib-navbar-brand .colorlib-logo:active, header .colorlib-navbar-bra
 
 .dish-wrap {
     overflow: hidden;
-    height: 420px;
     display: block;
     width: 100%;
     position: relative;
@@ -951,9 +950,14 @@ header .colorlib-navbar-brand .colorlib-logo:active, header .colorlib-navbar-bra
 }
 
 .dish-wrap .desc {
-    height: 200px;
     padding: 1.5em;
     text-align: center;
+}
+
+.dish-wrap .desc p {
+    line-height: 1.2em;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .dish-wrap .desc h4 {
