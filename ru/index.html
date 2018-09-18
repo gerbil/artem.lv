@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Artem.lv - Дератизация, Дезинсекция, Дезинфекция</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=""/>
-    <meta name="keywords" content="dezinfekcija, dezinsekcija, deratizācija, kukaiņu iznīcināšana, insektu iznīcināšana, grauzēju iznīcināšana, dezinsekcija Rīga, insektu kontrole"/>
-    <meta name="author" content=""/>
+    <meta name="description" content="Dezinsekcija un deratizācija Rīgā."/>
+    <meta name="keywords"
+          content="dezinfekcija, dezinsekcija, deratizācija, kukaiņu iznīcināšana, insektu iznīcināšana, grauzēju iznīcināšana, dezinsekcija Rīgā, insektu kontrole"/>
+    <meta name="author" content="jurijs.kobecs@gmail.com"/>
 
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
-    <meta name="twitter:card" content=""/>
+    <meta property="og:title" content="Artem.lv kompānija"/>
+    <meta property="og:type" content="site"/>
+    <meta property="og:image" content="https://artem.lv/images/logo.png"/>
+    <meta property="og:url" content="https://artem.lv"/>
+    <meta property="og:site_name" content="Artem.lv"/>
+    <meta property="og:description" content="Dezinsekcija un deratizācija Rīgā"/>
+    <meta name="twitter:title" content="Artem.lv kompānija"/>
+    <meta name="twitter:image" content="https://artem.lv/images/logo.png"/>
+    <meta name="twitter:url" content="https://artem.lv"/>
+    <meta name="twitter:card" content="summary"/>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="shortcut icon" href=".../favicon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
@@ -49,6 +51,8 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/totop.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
 
     <!-- Modernizr JS -->
     <script src="../js/modernizr-2.6.2.min.js"></script>
@@ -66,28 +70,53 @@
     }
     gtag('js', new Date());
     gtag('config', 'AW-799846183'); </script>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2188598-8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-2188598-8');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2188598-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-2188598-8');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGDSRCG');</script>
+    <!-- End Google Tag Manager -->
 
 </head>
 <body>
 
 <div id="colorlib-page">
     <header>
-
+        <!-- MAIN MENU -->
         <div id="cd-nav">
             <nav id="cd-main-nav">
                 <ul>
                     <li><a href="#about">О нас</a></li>
-                    <li><a href="#services">Услуги</a></li>
+                    <li class="toggle-menu ru"><a class="#">Услуги<span class="caret"></span></a>
+                        <div class="submenu">
+                            <a href="#services">Дезинсекция</a>
+                            <a href="#services">Дератизация</a>
+                            <a href="#services">Дезинфекция</a>
+                            <a href="#add_services">Контроль за питьевой водой</a>
+                            <a href="#add_services">Санитарно-гигиеническое обучение</a>
+                        </div>
+                    </li>
                     <li><a href="#clients">Наши клиенты</a></li>
                     <li><a href="#prices">Цены</a></li>
                     <li><a href="#contact-form">Контакты</a></li>
@@ -108,6 +137,7 @@
         </div>
     </header>
 
+    <!-- INTRO -->
     <aside id="colorlib-hero">
         <div class="flexslider">
             <ul class="slides">
@@ -158,6 +188,7 @@
         </div>
     </aside>
 
+    <!-- CONTACTS HEAD -->
     <div class="colorlib-intro">
         <div class="container">
             <div class="row">
@@ -205,6 +236,7 @@
 
     <div class="goto-here"></div>
 
+    <!-- INFO -->
     <div id="about" class="colorlib-about" class="colorlib-light-grey">
         <div class="container">
             <div class="row">
@@ -247,6 +279,7 @@
         </div>
     </div>
 
+    <!-- SERVICES -->
     <div id="services" class="colorlib-menu">
         <div class="container">
             <div class="row">
@@ -302,6 +335,7 @@
         </div>
     </div>
 
+    <!-- FEATURED SERVICE -->
     <div class="colorlib-introduction" style="background-image: url(../images/science.jpg);"
          data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
@@ -310,22 +344,21 @@
                 <div class="col-md-6 col-md-offset-3 col-md-push-3">
                     <div class="intro-box animate-box">
                         <h2><a href="#"></a>Контроль за питьевой водой</h2>
-                        <p>Составление, согласование с контролирующими организациями программы по контролю за питьевой
-                            водой
-                            в соответствии с требованиями MK N235 "Dzerama udens obligatas nekaitiguma un kvalitates
-                            prasibas monitoringa un kontroles kartiba" 31. panta<br/>
-                            Отбор проб воды и доставка их в лабораторию для проведения бактериологического и химических
-                            анализов</p>
+                        <p>Составление и согласование с контролирующими организациями программы по контролю за питьевой
+                            водой в соответствии с требованиями MK N235 ("Dzerama udens obligatas nekaitiguma un kvalitates
+                            prasibas monitoringa un kontroles kartiba" 31. panta)<br/>
+                            А так же отбор проб воды и доставка их в лабораторию для проведения бактериологического и химических
+                            анализов.</p>
                         <p><a href="https://www.youtube.com/watch?v=LU6Mwmi49eo"
-                              class="btn btn-primary btn-lg btn-outline popup-vimeo"><i class="icon-play3"></i>Смотреть
-                            видео</a></p>
+                              class="btn btn-primary btn-lg btn-outline popup-vimeo"><i class="icon-play3"></i>Смотреть видео</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="colorlib-menu">
+    <!-- ADDITIONAL SERVICES -->
+    <div id="add_services" class="colorlib-menu">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
@@ -361,6 +394,7 @@
         </div>
     </div>
 
+    <!-- CLIENTS -->
     <div id="clients" class="colorlib-testimony" style="background-image: url(../images/clients.jpg);"
          data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
@@ -418,6 +452,7 @@
         </div>
     </div>
 
+    <!-- PRICES -->
     <div id="prices" class="colorlib-menu">
         <div class="container">
             <div class="colorlib-menu-2">
@@ -610,6 +645,7 @@
     </div>
 </div>
 
+<!-- CONTACT FORM -->
 <div id="contact-form" class="colorlib-reservation reservation-img"
      style="background-image: url(../images/contact.jpg);"
      data-stellar-background-ratio="0.5">
@@ -691,6 +727,7 @@
     </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
     <div id="footer">
         <div class="container">

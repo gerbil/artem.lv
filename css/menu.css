@@ -1,0 +1,29 @@
+.caret {
+    margin-top: 10px;
+    margin-left: 4px;
+    font-size: 12px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+li.toggle-menu {
+    text-align: -webkit-center;
+}
+
+li.toggle-menu:hover {
+    margin-left: -41px;
+    margin-right: -20px !important;
+}
+
+li.ru:hover {
+    margin-left: -89px;
+    margin-right: -69px !important;
+}
+
+li.toggle-menu a {
+    cursor: pointer;
+}
+
+.submenu a {
+    display: grid;
+    font-size: 14px;
+}

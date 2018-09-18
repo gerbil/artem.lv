@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Artem.lv - Deratizācija, Dezinsekcija, Dezinfekcija</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=""/>
-    <meta name="keywords" content="dezinfekcija, dezinsekcija, deratizācija, kukaiņu iznīcināšana, insektu iznīcināšana, grauzēju iznīcināšana, dezinsekcija Rīga, insektu kontrole"/>
-    <meta name="author" content="test"/>
+    <meta name="description" content="Dezinsekcija un deratizācija Rīgā."/>
+    <meta name="keywords"
+          content="dezinfekcija, dezinsekcija, deratizācija, kukaiņu iznīcināšana, insektu iznīcināšana, grauzēju iznīcināšana, dezinsekcija Rīgā, insektu kontrole"/>
+    <meta name="author" content="jurijs.kobecs@gmail.com"/>
 
     <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content=""/>
-    <meta name="twitter:image" content=""/>
-    <meta name="twitter:url" content=""/>
-    <meta name="twitter:card" content=""/>
+    <meta property="og:title" content="Artem.lv kompānija"/>
+    <meta property="og:type" content="site"/>
+    <meta property="og:image" content="https://artem.lv/images/logo.png"/>
+    <meta property="og:url" content="https://artem.lv"/>
+    <meta property="og:site_name" content="Artem.lv"/>
+    <meta property="og:description" content="Dezinsekcija un deratizācija Rīgā"/>
+    <meta name="twitter:title" content="Artem.lv kompānija"/>
+    <meta name="twitter:image" content="https://artem.lv/images/logo.png"/>
+    <meta name="twitter:url" content="https://artem.lv"/>
+    <meta name="twitter:card" content="summary"/>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.png">
@@ -49,6 +51,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/totop.css">
+    <link rel="stylesheet" href="css/menu.css">
 
 
     <!-- Modernizr JS -->
@@ -67,29 +70,60 @@
     }
     gtag('js', new Date());
     gtag('config', 'AW-799846183'); </script>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2188598-8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-2188598-8');
-</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2188598-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-2188598-8');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TGDSRCG');</script>
+    <!-- End Google Tag Manager -->
 
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGDSRCG"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="colorlib-page">
     <header>
-
+        <!-- MAIN MENU -->
         <div id="cd-nav">
             <nav id="cd-main-nav">
                 <ul>
                     <li><a href="#about">Apraksts</a></li>
-                    <li><a href="#services">Pakalpojumi</a></li>
+                    <li class="toggle-menu"><a class="#">Pakalpojumi<span class="caret"></span></a>
+                        <div class="submenu">
+                            <a href="#services">Dezinsekcija</a>
+                            <a href="#services">Deratizācija</a>
+                            <a href="#services">Dezinfekcija</a>
+                            <a href="#add_services">Ūdens monitorings</a>
+                            <a href="#add_services">San. minimums apmācība</a>
+                        </div>
+                    </li>
                     <li><a href="#clients">Klienti</a></li>
                     <li><a href="#prices">Cenas</a></li>
                     <li><a href="#contact-form">Kontakti</a></li>
@@ -110,6 +144,7 @@
         </div>
     </header>
 
+    <!-- INTRO -->
     <aside id="colorlib-hero">
         <div class="flexslider">
             <ul class="slides">
@@ -123,8 +158,7 @@
                                         <h1>Grauzēju un insektu kontrole</h1>
                                         <p>Mums ir jau 15 gadu veiksmīga darba pieredze.<br/>Strādājam dažādos objektos:<br/>
                                             no biroju telpām līdz rūpnieciskiem uzņēmumiem un to teritorijām.</p>
-                                        <p><a href="#contact-form" class="btn btn-primary btn-lg btn-learn">Sazināties
-                                            ar mums</a></p>
+                                        <p><a href="#contact-form" class="btn btn-primary btn-lg btn-learn">Sazināties ar mums</a></p>
                                         <div class="desc2"></div>
                                     </div>
                                 </div>
@@ -161,6 +195,7 @@
         </div>
     </aside>
 
+    <!-- CONTACTS HEAD -->
     <div class="colorlib-intro">
         <div class="container">
             <div class="row">
@@ -208,6 +243,7 @@
 
     <div class="goto-here"></div>
 
+    <!-- INFO -->
     <div id="about" class="colorlib-about" class="colorlib-light-grey">
         <div class="container">
             <div class="row">
@@ -227,6 +263,9 @@
                                     īsteno kompleksveida apkalpošanu pa atšķirīgu kategoriju pestkonrol (pest control)
                                     objektu programmu, tai skaitā dezinsekcija un deratizācija. Visi darbi tiek veikti
                                     atbilstoši LR un Eiropas Savienības normatīviem dokumentiem.
+                                    <br/> <br/>
+                                    Pēc darbu pabeigšanas ir noformēts akts par izpildītajiem darbiem. Apmaksa tiek veikta par darba
+                                    izpildītu faktu. Cenas pakalpojumiem ir sarunājamas.
                                 </p>
                             </div>
                         </div>
@@ -248,14 +287,14 @@
         </div>
     </div>
 
+    <!-- SERVICES -->
     <div id="services" class="colorlib-menu">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
                     <span class="icon"><img src="images/small_logo.png"/></span>
                     <h2>Pakalpojumi</h2>
-                    <p>Dezinsekcija un deratizācija ietver sevī kompleksveida darbības, kuri ir bioloģiski, ķīmiski un fiziski.<br/><br/>
-                       Visi darbi tiek veikti atbilstoši LR un Eiropas Savienības normatīviem dokumentiem.</p>
+                    <p>Dezinsekcija un deratizācija ietver sevī kompleksveida darbības, kuri ir bioloģiski, ķīmiski un fiziski.</p>
                 </div>
             </div>
             <div class="row">
@@ -266,8 +305,9 @@
                             <div class="desc">
                                 <h4><a href="#">Dezinsekcija - sadzīves kukaiņu iznīcināšana</a></h4>
                                 <p>Dezinsekcija ir kukaiņu iznīcināšana un profilakse no tiem.<br/><br/>
-                                   Ar tādu problēmu labāk ir vērsties pie speciālistiem, kuri attīrīs telpu un dos norādījumus tālākajām darbībām.<br/><br/>
-                                   Mēs veicām inficēto telpu apstrādi ar dažādiem ķīmiskiem sastāviem, kukaiņi pēc tādas apstrādes iet bojā, bet cilvēkam tāda dezinsekcija ir nekaitīga.
+                                    Ar tādu problēmu labāk ir vērsties pie speciālistiem, kuri attīrīs telpu un dos norādījumus tālākajām darbībām.<br/><br/>
+                                    Mēs veicām inficēto telpu apstrādi ar dažādiem ķīmiskiem sastāviem, kukaiņi pēc tādas apstrādes iet bojā, bet cilvēkam tāda dezinsekcija ir
+                                    nekaitīga.
                                 </p>
                             </div>
                         </div>
@@ -279,9 +319,11 @@
                             <div class="dish-img" style="background-image: url(images/rat.jpg);"></div>
                             <div class="desc">
                                 <h4><a href="#">Deratizācija - grauzēju iznīcināšana</a></h4>
-                                <p>Deratizācija ir pasākumu komplekss kurš ir virzīts uz grauzēju (žurku, vagotājpeļu, peļu un kurmju) iznīcināšanu, ka arī īpašuma aizsardzību no grauzēju uzbrukumiem.<br/><br/>
-                                   Kā zināms žurkas pārnes dažādas slimības: buboņu mēri, trakumsērgu, drudzi un daudz ko citu. Infekcijas un epidēmijas var rasties no tā, ka žurkas bieži apdzīvo vietās, kur glāba barību.<br/><br/>
-                                   Grauzēji bojā preci un piesārņo telpas ar savam atkritumiem.
+                                <p>Deratizācija ir pasākumu komplekss kurš ir virzīts uz grauzēju (žurku, vagotājpeļu, peļu un kurmju) iznīcināšanu, ka arī īpašuma aizsardzību no
+                                    grauzēju uzbrukumiem.<br/><br/>
+                                    Kā zināms žurkas pārnes dažādas slimības: buboņu mēri, trakumsērgu, drudzi un daudz ko citu. Infekcijas un epidēmijas var rasties no tā, ka
+                                    žurkas bieži apdzīvo vietās, kur glāba barību.<br/><br/>
+                                    Grauzēji bojā preci un piesārņo telpas ar savam atkritumiem.
                                 </p>
                             </div>
                         </div>
@@ -301,6 +343,7 @@
         </div>
     </div>
 
+    <!-- FEATURED SERVICE -->
     <div class="colorlib-introduction" style="background-image: url(images/science.jpg);"
          data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
@@ -323,14 +366,13 @@
         </div>
     </div>
 
-    <div class="colorlib-menu">
+    <!-- ADDITIONAL SERVICES -->
+    <div id="add_services" class="colorlib-menu">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
                     <span class="icon"><img src="images/small_logo.png"/></span>
-                    <h2>Papildu pakalpojumi</h2>
-                    <p>Pēc darbu pabeigšanas ir noformēts akts par izpildītajiem darbiem. Apmaksa tiek veikta par darba
-                        izpildītu faktu. Cenas pakalpojumiem ir sarunājamas.</p>
+                    <h2>Papildus pakalpojumi</h2>
                 </div>
             </div>
             <div class="row">
@@ -339,7 +381,10 @@
                         <div class="wrap">
                             <div class="dish-img" style="background-image: url(images/water.jpg);"></div>
                             <div class="desc">
-                                <h4><a href="#">Ūdens laboratorijā ķīmisko un bakterioloģisko analīzes</a></h4>
+                                <h4><a href="#">Ūdens monitorings</a></h4>
+                                <p class="text-left">Dzeramā ūdens monitorings ir regulāras dzeramā ūdens kvalitātes laboratoriskās pārbaudes, kas tiek veiktas:<br/><br/>
+                                    - lai iegūtu informāciju par ūdens kvalitāti,<br/>
+                                    - lai iegūtu informāciju par dzeramā ūdens sagatavošanas efektivitāti.</p>
                             </div>
                         </div>
                     </div>
@@ -358,6 +403,7 @@
         </div>
     </div>
 
+    <!-- CLIENTS -->
     <div id="clients" class="colorlib-testimony" style="background-image: url(images/clients.jpg);"
          data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
@@ -411,6 +457,7 @@
         </div>
     </div>
 
+    <!-- PRICES -->
     <div id="prices" class="colorlib-menu">
         <div class="container">
             <div class="colorlib-menu-2">
@@ -591,18 +638,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 animate-box text-center">
-                    <p>Pēc darbu pabeigšanas ir noformēts akts par izpildītajiem darbiem. Apmaksa tiek veikta par
-                        darba izpildītu faktu. Cenas pakalpojumiem ir sarunājamas, atkarīgi no izmitināšanas ar
-                        kaitētājiem, sanitārtehniska objekta stāvokļa, apstrādāšanas un veida citiem faktoriem
-                        teritorijā.</p>
-                    <p><a href="#contact-form" class="btn btn-primary btn-lg btn-learn">Sazināties ar mums</a>
-                </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- CONTACT FORM -->
 <div id="contact-form" class="colorlib-reservation reservation-img"
      style="background-image: url(images/contact.jpg);"
      data-stellar-background-ratio="0.5">
@@ -684,6 +725,7 @@
     </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
     <div id="footer">
         <div class="container">

@@ -254,6 +254,14 @@
         }
     }
 
+    // MAIN MENU
+    $(".submenu").hide();
+    $(".toggle-menu").hover(function (e) {
+        e.preventDefault(); // If you need to stop default action
+        $(".submenu", this).toggle(); // OR $(this).find(".submenu").toggle();
+    });
+
+    // CONTACT FORM JS
     $("#contact-form").submit(function (event) {
 
         $('#contact-form input[type="submit"]')[0].disabled = true;
@@ -276,6 +284,7 @@
         emailjs.send('default_service', 'template_YrhHYqua', templateParams)
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
+                gtag('event', 'email_sent', {'method': 'contact_form'});
             }, function (error) {
                 console.log('FAILED...', error);
             });
