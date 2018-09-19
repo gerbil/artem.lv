@@ -10,13 +10,13 @@ li.toggle-menu {
 }
 
 li.toggle-menu:hover {
-    margin-left: -41px;
-    margin-right: -20px !important;
+    margin-left: -20px;
+    margin-right: 0px !important;
 }
 
 li.ru:hover {
-    margin-left: -89px;
-    margin-right: -69px !important;
+    margin-left: -95px;
+    margin-right: -75px !important;
 }
 
 li.toggle-menu a {
