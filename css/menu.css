@@ -38,6 +38,13 @@ li.toggle-menu a {
  * prefixes.
  */
 
+
+@media only screen and (max-width: 500px) {
+    #menuToggle {
+        right: 20px !important;
+    }
+}
+
 #menuToggle
 {
     display: block;
