@@ -2138,7 +2138,7 @@ input[type="text"] {
     z-index: 2;
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1300px) {
     #cd-nav ul {
         /* the navigation moves to the top */
         position: absolute;
@@ -2159,6 +2159,17 @@ input[type="text"] {
         top: auto;
         visibility: hidden;
         transform: scale(0);
+    }
+
+    #menuToggle {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    #menuToggle {
+
     }
 }
 
