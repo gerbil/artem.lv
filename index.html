@@ -60,17 +60,7 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Ads: 799846183 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-799846183"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'AW-799846183'); </script>
-
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2188598-8"></script>
     <script>
@@ -81,6 +71,32 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-2188598-8');
+    </script>
+
+    <!-- COOKIE -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#216942",
+                        "text": "#b2d192"
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#afed71",
+                        "border": "#afed71"
+                    }
+                },
+                "showLink": false,
+                "position": "bottom-right",
+                "content": {
+                    "message":
+                        "Šī tīmekļa vietne izmanto sīkfailus\nMēs izmantojam sīkfailus, lai personalizētu saturu vai reklāmas un analizētu mūsu datplūsmu. Turpinot lietot mūsu tīmekļa vietni, jūs apstiprināt mūsu sīkdatnes."
+                }
+            })});
     </script>
 
 </head>
@@ -388,7 +404,7 @@
 				• lai iegūtu informāciju par dzeramā ūdens sastāvu,<br/>
 				• lai iegutu informāciju par dzeramā ūdens kvalitāti<br/><br/>
 				Ūdens kvalitātes laboratoriskās pārbaudes iedala uz ķīmiskiem un bakterioloģiskiem pārbaudēm.<br/>
-				SIA “Artem” piedava : ūdens kontroles programmas sastādīšanu un programmas saskaņošanu ar MK nr.235 prasībam. Mūsu speciālisti nodrošinās dzeramā ūdens paraugu ņemšanu mikrobioloģiskajām analīzēm un transportešanu lidz laboratorijai. 
+				SIA “Artem” piedava : ūdens kontroles programmas sastādīšanu un programmas saskaņošanu ar MK nr.235 prasībam. Mūsu speciālisti nodrošinās dzeramā ūdens paraugu ņemšanu mikrobioloģiskajām analīzēm un transportešanu lidz laboratorijai.
                             </div>
                         </div>
                     </div>
@@ -813,4 +829,3 @@
 
 </body>
 </html>
-
